@@ -23,6 +23,7 @@
   "rules": {
     "prettier/prettier": "error",
     "camelcase": "off",
+    "no-underscore-dangle": "off",
     "import/no-unresolved": "error",
     "@typescript-eslint/naming-convention": [
       "error",
@@ -30,15 +31,12 @@
         "selector": "interface",
         "format": [
           "PascalCase"
-        ],
-        "custom": {
-          "regex": "^I[A-Z]",
-          "match": true
-        }
+        ]
       }
     ],
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
+    "no-use-before-define": "off",
     "no-shadow": "off",
     "no-console": "off",
     "no-useless-constructor": "off",
