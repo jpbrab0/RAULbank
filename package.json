@@ -5,6 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/mpluiz/ts-backend-template",
   "scripts": {
+    "start": "node --require ts-node/register src/index.ts",
     "test": "npx jest --passWithNoTests --runInBand --no-cache",
     "test:verbose": "npx jest",
     "test:watch": "npm run test -- --watch",
