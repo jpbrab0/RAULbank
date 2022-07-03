@@ -21,8 +21,9 @@
 
 Required*
 
-`REQUIRED_ENVIRONMENT`*
-`ENVIRONMENT`
+`REQUIRED_ENVIRONMENT=required`*
+
+`ENVIRONMENT=`
 
 ## Installation
 
@@ -67,7 +68,7 @@ Coverage Report
 - Make a fork of this repository;
 - Create a branch with your feature: `git checkout -b <your-branch>`;
 - Make a commit : `git commit -m '<commit-message>'`;
-- Push to your branch: `git push <origin> your-branch`;
+- Push to your branch: `git push <origin> <your-branch>`;
 
 ## License
 
