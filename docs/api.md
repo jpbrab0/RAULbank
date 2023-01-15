@@ -73,6 +73,35 @@ mutation Transaction($data: AccountTypes!) {
 | `receiver`      | `ID!` |
 | `amount`  | `Float!` |
 
+### Get Account
+```graphql
+query GetAccount($id: ID!) {
+  getAccount(_id: $id) {
+    balance
+    user {
+      document
+      documentType
+      email
+      username
+    }
+  }
+}
+```
+| Parameter | Type   |
+| :-------- | :----- |
+| `id`      | `ID!` |
+
+### Get Account Balance
+```graphql
+query GetBalance($id: ID!) {
+  getBalance(_id: $id)
+}
+```
+| Parameter | Type   |
+| :-------- | :----- |
+| `id`      | `ID!` |
+
+
 ## Extract
 ### Get Extract
 ```graphql
