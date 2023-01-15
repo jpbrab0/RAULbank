@@ -6,14 +6,13 @@ mutation CreateUser($data: UserTypes!) {
   createUser(data: $data)
 }
 ```
-```
 | Parameter | Type   |
 | :-------- | :----- |
 | `username`      | `String!` |
 | `email`      | `String!` |
 | `documentType`      | `String!` |
 | `document`      | `String!` |
----
+
 ### Get User
 ```graphql
 query GetUser($userId: ID!) {
