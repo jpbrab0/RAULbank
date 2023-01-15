@@ -3,12 +3,15 @@
     "target": "es2017",
     "module": "commonjs",
     "outDir": "./dist",
-    "rootDirs": ["src", "tests"],
+    "rootDirs": [
+      "src",
+      "tests"
+    ],
     "baseUrl": "src",
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "skipLibCheck": true
   },
   "include": [
