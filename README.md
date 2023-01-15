@@ -1,75 +1,69 @@
-[//]: # ([![MIT License]&#40;https://img.shields.io/apm/l/atomic-design-ui.svg?&#41;]&#40;https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs&#41;)
-[![Tests](https://github.com/mpluiz/ts-backend-template/actions/workflows/test.yml/badge.svg)](https://github.com/mpluiz/ts-backend-template/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/mpluiz/ts-backend-template/branch/master/graph/badge.svg)](https://codecov.io/gh/mpluiz/ts-backend-template)
+# RAULbank 💸
+O banco dos raul
 
-# TS BACKEND TEMPLATE
+## About the project 📜
+Bank Api, and can
+- Create User
+- Create account for an user
+- Deposit money
+- Withdraw money
+- Transaction an amount to another user account
+- Get your account extract
 
--
+And is builded with:
+- Node.js
+- Typescript
+- Mongoose ODM
+- MongoDB
+- Graphql
+- Docker-Compose
 
-## Features
+## Installing the project 📦
+Prerequisites:
 
-- 
+- [Node.js](https://nodejs.org/en/)
+- [Docker](https://docs.docker.com/get-started/)
+- [Docker-Compose](https://docs.docker.com/compose/)
 
-## Roadmap
+Clone the repository to your local machine:
 
-- 
-
-## Requirements
-- Node `<lts-version>`
-
-## Environment Variables
-
-Required*
-
-`REQUIRED_ENVIRONMENT=required`*
-
-`ENVIRONMENT=`
-
-## Installation
-
-Instructions to install dependencies and start the dev server\
-put required variables in the `env` file*
-
-```bash
-cd <your-project-name>
-npm i
-cp .env-example .env
-npm run serve
-```
-
-## Tests
-
-Instructions to run tests
+With Https:
 
 ```bash
-  npm run test
+git clone https://github.com/jpbrab0/RAULbank.git
 ```
 
-Commands for tests
+With SSH:
 
 ```bash
-  npm run test
-  npm run test:watch
-  npm run test:ci
+git clone git@github.com:jpbrab0/RAULbank.git
 ```
 
-Coverage Report
+With Github CLI:
 
 ```bash
-  npm run test --coverage
+gh repo clone jpbrab0/RAULbank
 ```
 
-## Documentation reference
+## Running the project 🏃
 
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+Starting Docker-Compose
+1. Install all dependencies of the project with npm:
 
-## How to contribute
+- `npm i`
 
-- Make a fork of this repository;
-- Create a branch with your feature: `git checkout -b <your-branch>`;
-- Make a commit : `git commit -m '<commit-message>'`;
-- Push to your branch: `git push <origin> <your-branch>`;
+2. Setting up the database:
 
-## License
+- `docker-compose up -d`
 
-[MIT](https://choosealicense.com/licenses/mit/)
+3. Rename the .exemple.env to .env
+- `mv .exemple.env .env`
+
+5. Initialize the server:
+
+- `npm start`
+---
+### [Read the api docs!](/docs/api.md)
+---
+
+Made by [jpbrab0](https://github.com/jpbrab0)
